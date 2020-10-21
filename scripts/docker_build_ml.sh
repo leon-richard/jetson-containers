@@ -4,6 +4,7 @@ set -e
 
 BASE_IMAGE="nvcr.io/nvidia/l4t-base:r32.4.3"
 CONTAINERS=${1:-"all"}
+LD_LIBRARY_PATH="/usr/local/cuda-10.2/lib64"
 
 #
 # PyTorch (for JetPack 4.4)
